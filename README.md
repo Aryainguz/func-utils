@@ -116,6 +116,18 @@ A simple task scheduler utility for running tasks at fixed intervals or one-off 
 
 ---
 
+### `createSingleton` Utility
+
+Implements the Singleton Pattern, ensuring that a class or object is instantiated only once throughout the application's lifecycle. This is useful for managing resources such as database connections or configuration objects.
+
+#### Features:
+
+- Guarantees a single instance.
+- Useful for shared resources across the application.
+- Can be applied to any class.
+
+---
+
 ## Description
 
 These utilities help manage function executions efficiently, improve system resilience, and handle failures gracefully. **Debouncing** waits for a period of inactivity before executing a function, **Throttling** ensures that a function is only executed at regular intervals, **Circuit Breakers** prevent cascading failures, **Rate Limiting** controls request rates, **Logging** helps debug, and **Saga Pattern** ensures reliable distributed transactions.
