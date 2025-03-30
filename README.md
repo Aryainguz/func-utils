@@ -78,7 +78,7 @@ The Saga Pattern ensures distributed transactions are executed reliably across m
 
 ---
 
-### `awaitAllSettledWithTimeout` Utility 🆕
+### `awaitAllSettledWithTimeout` Utility
 
 A timeout-safe wrapper around parallel promises, ideal for aggregating responses from multiple microservices. Each task is executed with a timeout, and results are returned in an `allSettled`-style format with added support for timed-out states.
 
@@ -90,7 +90,7 @@ A timeout-safe wrapper around parallel promises, ideal for aggregating responses
 
 ---
 
-### `createFactory` Utility 🆕
+### `createFactory` Utility
 
 Implements the Factory Pattern to dynamically create and cache service instances based on custom config. Perfect for multi-tenant apps, pluggable services, and scoped service containers.
 
@@ -100,6 +100,19 @@ Implements the Factory Pattern to dynamically create and cache service instances
 - Reuse instances by key.
 - Supports lazy loading.
 - Encapsulates configuration logic.
+
+---
+
+### `createTaskScheduler` Utility
+
+A simple task scheduler utility for running tasks at fixed intervals or one-off future executions. Great for background jobs, recurring tasks, and event-based systems.
+
+#### Features:
+
+- Schedule recurring tasks at intervals (e.g., every 5 minutes).
+- Run tasks once at a specific time.
+- Remove or cancel tasks before they run.
+- Easily scalable for managing background jobs or delayed tasks.
 
 ---
 
