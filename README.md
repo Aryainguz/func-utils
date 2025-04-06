@@ -11,6 +11,7 @@
 A utility that debounces function calls, ensuring they are executed only after a specified delay of inactivity. Ideal for scenarios where you want to trigger a function after the user has stopped interacting, such as search inputs or resize events.
 
 #### Features:
+
 - Simple and reusable.
 - Customizable delay.
 - Preserves the `this` context.
@@ -22,6 +23,7 @@ A utility that debounces function calls, ensuring they are executed only after a
 A utility that throttles function calls, ensuring they are executed at most once every specified time interval. This is perfect for scenarios where you want to limit how often a function is called, such as during scroll events or window resizing.
 
 #### Features:
+
 - Simple and reusable.
 - Customizable time interval.
 - Prevents excessive calls to performance-heavy functions.
@@ -33,6 +35,7 @@ A utility that throttles function calls, ensuring they are executed at most once
 A Circuit Breaker helps prevent cascading failures in microservices by stopping requests to an unresponsive service and retrying after a cooldown period.
 
 #### Features:
+
 - Prevents system-wide failures by handling service unavailability.
 - Configurable timeout and error thresholds.
 - Supports fallback responses when the service is down.
@@ -44,6 +47,7 @@ A Circuit Breaker helps prevent cascading failures in microservices by stopping 
 A Redis-backed rate limiter that controls the number of requests a user can make within a time frame, protecting services from abuse and excessive traffic.
 
 #### Features:
+
 - Prevents excessive API requests.
 - Uses Redis for distributed rate limiting.
 - Supports IP-based or user-specific rate limiting.
@@ -55,6 +59,7 @@ A Redis-backed rate limiter that controls the number of requests a user can make
 A structured logging utility using Winston, providing log rotation and different log levels.
 
 #### Features:
+
 - Supports console and file logging.
 - Log rotation with timestamps.
 - Configurable log levels (info, error, debug, etc.).
@@ -66,6 +71,7 @@ A structured logging utility using Winston, providing log rotation and different
 The Saga Pattern ensures distributed transactions are executed reliably across multiple microservices.
 
 #### Features:
+
 - Manages long-running transactions.
 - Supports compensating transactions in case of failures.
 - Ensures eventual consistency in distributed systems.
@@ -77,9 +83,23 @@ The Saga Pattern ensures distributed transactions are executed reliably across m
 A timeout-safe wrapper around parallel promises, ideal for aggregating responses from multiple microservices. Each task is executed with a timeout, and results are returned in an `allSettled`-style format with added support for timed-out states.
 
 #### Features:
+
 - Executes async tasks in parallel with a global timeout per task.
 - Returns `fulfilled`, `rejected`, or `timed_out` status for each task.
 - Great for fail-soft and resilient service orchestration.
+
+---
+
+### `createFactory` Utility 🆕
+
+Implements the Factory Pattern to dynamically create and cache service instances based on custom config. Perfect for multi-tenant apps, pluggable services, and scoped service containers.
+
+#### Features:
+
+- Dynamic service instantiation.
+- Reuse instances by key.
+- Supports lazy loading.
+- Encapsulates configuration logic.
 
 ---
 
