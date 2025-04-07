@@ -128,6 +128,18 @@ Implements the Singleton Pattern, ensuring that a class or object is instantiate
 
 ---
 
+### `serviceHealthCheck` Utility
+
+A utility for performing health checks on microservices, ensuring they are responsive and available. This is crucial for maintaining system reliability and performance.
+
+#### Features:
+
+- Periodically checks the health of services.
+- Configurable health check intervals.
+- Supports custom health check logic.
+
+---
+
 ## Description
 
 These utilities help manage function executions efficiently, improve system resilience, and handle failures gracefully. **Debouncing** waits for a period of inactivity before executing a function, **Throttling** ensures that a function is only executed at regular intervals, **Circuit Breakers** prevent cascading failures, **Rate Limiting** controls request rates, **Logging** helps debug, and **Saga Pattern** ensures reliable distributed transactions.
