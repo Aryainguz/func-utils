@@ -153,6 +153,19 @@ A utility for managing tasks in a distributed priority queue, ensuring that task
 
 ---
 
+### `eventEmitterWithThrottle` Utility
+
+A utility that combines event emission with a throttling mechanism, ensuring that events are only processed at a defined frequency. This is useful for avoiding flood or excessive processing of the same event type.
+
+#### Features:
+
+- Throttles event processing based on a time interval.
+- Prevents overloading consumers with frequent events.
+- Supports custom throttle durations for different event types.
+- Useful for event-driven systems and microservices with burst traffic or rate-limited resources.
+
+---
+
 ## Description
 
 These utilities help manage function executions efficiently, improve system resilience, and handle failures gracefully. **Debouncing** waits for a period of inactivity before executing a function, **Throttling** ensures that a function is only executed at regular intervals, **Circuit Breakers** prevent cascading failures, **Rate Limiting** controls request rates, **Logging** helps debug, and **Saga Pattern** ensures reliable distributed transactions.
