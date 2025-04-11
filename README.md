@@ -140,6 +140,19 @@ A utility for performing health checks on microservices, ensuring they are respo
 
 ---
 
+### `distributedPriorityQueue` Utility
+
+A utility for managing tasks in a distributed priority queue, ensuring that tasks with higher priorities are processed before those with lower priorities. This is ideal for managing task execution in microservices, where critical tasks need to be processed first.
+
+#### Features:
+
+- Uses Min-Heap to prioritize tasks.
+- Redis-backed for distributed task management.
+- Asynchronous, non-blocking operations.
+- Tasks are stored with a TTL (time-to-live) to ensure timely processing.
+
+---
+
 ## Description
 
 These utilities help manage function executions efficiently, improve system resilience, and handle failures gracefully. **Debouncing** waits for a period of inactivity before executing a function, **Throttling** ensures that a function is only executed at regular intervals, **Circuit Breakers** prevent cascading failures, **Rate Limiting** controls request rates, **Logging** helps debug, and **Saga Pattern** ensures reliable distributed transactions.
