@@ -174,17 +174,11 @@ These utilities help manage function executions efficiently, improve system resi
 
 ## Installation
 
-To use these utilities in your project, simply clone the repository or install it using npm or yarn:
+To use these utilities in your project, simply clone the repository and import the specific function you need in your codebase:
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/func-utils.git
-
-# Or install via npm
-npm install func-utils
-
-# Or install via yarn
-yarn add func-utils
+git clone https://github.com/aryainguz/func-utils.git
 ```
 
 ---
