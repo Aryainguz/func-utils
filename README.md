@@ -72,6 +72,17 @@ The Saga Pattern ensures distributed transactions are executed reliably across m
 
 ---
 
+### `awaitAllSettledWithTimeout` Utility 🆕
+
+A timeout-safe wrapper around parallel promises, ideal for aggregating responses from multiple microservices. Each task is executed with a timeout, and results are returned in an `allSettled`-style format with added support for timed-out states.
+
+#### Features:
+- Executes async tasks in parallel with a global timeout per task.
+- Returns `fulfilled`, `rejected`, or `timed_out` status for each task.
+- Great for fail-soft and resilient service orchestration.
+
+---
+
 ## Description
 
 These utilities help manage function executions efficiently, improve system resilience, and handle failures gracefully. **Debouncing** waits for a period of inactivity before executing a function, **Throttling** ensures that a function is only executed at regular intervals, **Circuit Breakers** prevent cascading failures, **Rate Limiting** controls request rates, **Logging** helps debug, and **Saga Pattern** ensures reliable distributed transactions.
